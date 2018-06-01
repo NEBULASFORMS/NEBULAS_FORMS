@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title id="title">星云数据表 NebluasForms</title>
+</head>
+<style type="text/css">
+    @import url(../css/dapp_help.css);
+</style>
+<html class="Help_html">
+<body class="Help_body">
+    <div class="Help_global">
+        <div class="Help_main">
+            <div class="Help_top">
+                <div class="Help_top_logo"></div>
+                <div class="Help_top_Language" onmousedown="button_Help_Top_Language_down()" onmousemove="button_Help_Top_Language_move()" onmouseout="button_Help_Top_Language_out()" onmouseup="button_Help_Top_Language_up()"><label class="Help_None_Select">ENG</label></div>
+                <div class="Help_top_house" onmousedown="button_Help_Top_House_down()" onmousemove="button_Help_Top_House_move()" onmouseout="button_Help_Top_House_out()" onmouseup="button_Help_Top_House_up()"></div>
+            </div>           
+            <div class="Help_center">
+                <div id="Preview"></div>
+                <div class="Help_center_center">
+                    <div class="Help_center_Main">
+                        <div class="Help_Pane">
+                            <div class="Help_Pane_Head"></div>
+                            <div class="Help_Pane_Text">
+                                <div class="Text_Head"><label>使用说明</label></div>
+                                <div class="Text_Begin_Title"><label>在Dapp使用过程中,所有涉及到数据存储的操作都需要调用你的钱包 , 产生交易信息才能完成。比如你提交项目信息到合约中,分享出去表格的结果或者是保存你未编辑完的数据，这些都需要产生交易信息才能实现<br>在PC端我们会唤醒你浏览器的星云钱包插件,在移动端,我们会调用官方的钱包App(NAS nano)每当完成交易后,数据才会开始保存。在使用表单时只会产生少量GAS,在提示数据上传之后要等待一小段时间,才能查到你的数据,请不要担心你数据的丢失<br><br>Tips:在Edge浏览器中可能会产生文本无法换行的情况,推荐使用Chromium的浏览器</label></div>
+                                <div class="Text_IconFeatures"><label>功能区图标说明</label></div>
+                                <div class="Text_Instructions_House"><div></div><label>位置:主页面、表单页面、结果页面右上角功能区<br>功能:可以跳转到主页面</label></div>
+                                <div class="Text_Instructions_Help"><div></div><label><br>位置: 所有页面<br>可以打开一个新的使用说明页面</label></div>
+                                <div class="Text_Instructions_Upload"><div></div><label>位置: 编辑页面右上角功能区<br>功能: 可以使用数据上传功能 , 保存你尚未编辑完的项目</label></div>
+                                <div class="Text_Instructions_Preview"><div></div><label>位置: 编辑页面右上角功能区<br>功能: 可以使用项目预览功能 , 查看项目生成的表单的实际效果</label></div>
+                                <div class="Text_Instructions_Back"><div></div><label>位置:编辑页面右上角功能区<br>功能: 可以删除正在编辑的项目</label></div>
+                                <div class="Text_Used"><label>主页面功能说明</label></div>
+                                <div class="Text_Create"><div></div><label>创建项目 : <br>进入项目编辑页面,创建一个新的项目, 你可以添加不同种类的子元素来丰富项目的内容,每一个新的项目都可以从合约中获取一份独有的项目编号和项目密钥</label></div>
+                                <div class="Text_Restore"><div></div><label>恢复项目 : <br>可以恢复你之前上传的未编辑完的项目 , 恢复时需要你提供之前项目的编号和密钥</label></div>
+                                <div class="Text_Search"><div></div><label>搜索表单 : <br>可以搜索所有以及编辑完毕并且提交的项目,根据信息产生一份表单, 搜索时需要提供这个项目独有的编号, 搜索成功后会进入表单页面<br>你可以将项目编号或者生成表单页面的地址分享给你的朋友来完成信息收集</label></div>
+                                <div class="Text_Result"><div></div><label>查看结果:<br>在这里你可以查看我所收集到的当前项目的全部信息,在项目标题处显示出当前共有多少人完成项目的填写,同时在每一项子元素中都为你统计出相关的数据<br>在进入结果页面之前我会检查你所提供的项目编号与密钥是否正确</label></div>
+                                <div class="Text_Edit"><label>编辑页面说明</label></div>
+                                <div class="Text_Examples"><div onclick="ImgOpen(1)"></div><label>示例-1(点击图片查看大图)</label></div>
+                                <div class="Text_Left">
+                                    <label>
+                                        <span class="Text_Font_Width">左侧功能区 : </span><br><br><span class="Text_Color_Orange">项目信息 : </span>在这里会为你显示出你当前项目独有的编号和密钥,如果你没有这些,可以点击<span class="Text_Color_Bule"> 获取 </span>标签来获取一份信息,每个项目只能获取一次<br><br>
+                                        <span class="Text_Color_Orange">项目类型 :</span> 我在当前版本为你提供了三种可选择的子元素类型，你可以用这些类型来构建你的项目
+                                    </label>
+                                </div>
+                                <div class="Text_Right">
+                                    <label>
+                                        <span class="Text_Font_Width">右侧编辑区:</span><br><br>这个区域会提供编辑子元素的各种工具 , 如果你想编辑一项子元素的内容 , 只需要点击一下中间区域子元素所在的位置 , 就会在编辑区添加我为你提供的编辑工具<br><br>
+                                        在你编辑子元素时 , 会有一个预览效果让你参考, 这时候的数据不会保存起来,所以如果你不满意 ,  也不会对原有数据造成影响 , 这算是我为你保留的一次撤销操作的机会 , 同时,如果你对
+                                        这次编辑的效果满意 , 只需要点击编辑区底部  蓝色的 <span class="Text_Color_Bule">保存</span> 标签, 就可以保存这次的编辑信息
+                                    </label>
+                                </div>
+                                <div class="Text_Center"><label><span class="Text_Font_Width">项目展示区 : <br><br> </span>在这个区域里你可以看到你项目大致的布局 , 在初始的项目里 , 会有一个基础的子元素  , 你可以编辑它来完善你项目的标题和内容说明<br> 你在左侧添加的子元素都会在这里显示出来 , 如果你想编辑子元素 , 只需要点击一下子元素的位置 , 就会在右侧显示出编辑工具 , 同时子元素右上角也会出现 <img class="Text_FontImg_Del" /> 图标 , 让你可以删除不想要的子元素</label></div>
+                                <div class="Text_How"><label>怎样去创建一个项目?</label></div>
+                                <div class="Text_Begin">
+                                    <label>
+                                        点击主页面的创建项目选项, 会进入到一个新项目的编辑页面 <br><br>
+                                        在示例里,我添加一个多选项 , 正如上面介绍的, 点击项目展示区多该选项的位置可以编辑它的属性,可以看到,在编辑区能编辑这个元素的内容, 选项内容, 以及选项的个数 , 
+                                        同时在相关那一栏里 , 可以设置多选项选择数量的限制。
+                                    </label>
+                                </div>
+                                <div class="Text_Examples_2"><div onclick="ImgOpen(2)"></div><label>示例-2(点击图片查看大图)</label></div>
+                                <div class="Text_Begin_2"><label>在编辑完你的项目后 , 你可以点击项目展示区最下面 橙色 的 <span class="Text_Color_Orange">提交</span> 标签来提交这个项目到智能合约上, 要注意的是, 提交前你需要获取一份项目的编号信息, 这些信息是你的项目在智能合约上的 "地址" , 让你随时可以找回它 .如果你没编辑完就需要退出,但不想损失已经编辑的内容 , 可以点击顶部功能区的上传图标上传你的内容,之后再用编号和密钥恢复</label></div>
+                                <div class="Text_Examples_3"><div onclick="ImgOpen(3)"></div><label>示例-3(点击图片查看大图)</label></div>
+                                <div class="Text_Begin_3"><label>现在你已经提交了项目,然后你可以在主页面 , 使用搜索表单来搜索它, 随后产生一个页面, 你也可以分享这个页面的链接给其他人,让其他人进行填写, 之后你可以用项目编号和密钥查看你收集到的的结果</label></div>
+                                <div class="Text_Examples_4"><div onclick="ImgOpen(4)"></div><label>示例-4(点击图片查看大图)</label></div>
+                                <div class="Text_Examples_5"><div onclick="ImgOpen(5)"></div><label>示例-5(点击图片查看大图)</label></div>
+                                <div class="Text_Begin_4"><label>以上就是大致的使用流程,希望可以对你的使用提供一些帮助<br><br>在以后的版本里, 我会添加一个可以提建议和反馈的页面, 让我可以知道你遇到了什么问题来完善这个Dapp</label></div>
+                            </div>
+                            <div class="Help_Pane_Buttom"></div>
+                        </div>
+                    </div>
+                    <div id="Help_center_Preview">
+                    </div>
+                </div>
+                <div id="Help_center_Preview"></div>
+            </div>  
+        </div>
+    </div>
+
+
+    <script src=../lib/jquery-3.3.1.min.js></script>
+    <script src=../lib/nebPay.js></script>
+    <script src=../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+    <script src=../lib/nebulas.js></script>
+    <script>
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "../lib/dapp_lib/dapp_help.js";
+        document.getElementsByTagName('head')[0].appendChild(script);     
+    </script>
+
+</body>
+</html>

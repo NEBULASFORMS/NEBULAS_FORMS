@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title id="title">星云数据表 NebluasForms</title>
+</head>
+<style type="text/css">
+    @import url(../css/dapp_presentation.css);
+</style>
+<html class="Pre_html">
+<body class="Pre_body">
+    <div class="Pre_global">
+        <div class="Pre_main">
+            <div class="Pre_top">
+                <div class="Pre_top_logo"></div>
+                <div class="Pre_top_Language" title="English" onmousedown="button_Pre_Top_Language_down()" onmousemove="button_Pre_Top_Language_move()" onmouseout="button_Pre_Top_Language_out()" onmouseup="button_Pre_Top_Language_up()"><label class="Pre_None_Select">ENG</label></div>
+                <div class="Pre_top_house" title="主页" onmousedown="button_Pre_Top_House_down()" onmousemove="button_Pre_Top_House_move()" onmouseout="button_Pre_Top_House_out()" onmouseup="button_Pre_Top_House_up()"></div>
+                <div class="Pre_top_help" title="帮助" onmousedown="button_Pre_Top_Help_down()" onmousemove="button_Pre_Top_Help_move()" onmouseout="button_Pre_Top_Help_out()" onmouseup="button_Pre_Top_Help_up()"></div>
+            </div>
+            <div class="Pre_center">
+                <div id="Pre_Remind"></div>
+                <div id="Pre_House"></div>
+                <div id="Pre_Form_Submit"></div>
+                <div class="Pre_center_center">
+                    <div id="Pre_form" class="Pre_form"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=../lib/jquery-3.3.1.min.js></script>
+    <script src=../lib/nebPay.js></script>
+    <script src=../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+    <script src=../lib/nebulas.js></script>
+    <script id="dapp_address" src="../lib/dapp_lib/dapp_address.js"></script>
+    <script id="dapp_presentation" src="../lib/dapp_lib/dapp_presentation.js"></script>
+    <script id="dapp_presentation" src="../lib/dapp_lib/dapp_presentation_data.js"></script>
+    <script>
+        window.onload = function () {
+            Pre_OnLoad();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>星云数据表 NebluasForms</title>
+</head>
+<style type="text/css">
+    @import url(../css/dapp_edit.css);
+    @import url(../css/dapp_presentation.css);
+    .preview {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        z-index: 999;
+        background: url(../img/edit/edit_main.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+<html class="html">
+<body class="body">
+    <div class="global">
+        <div class="main">
+
+            <div class="top">
+                <div class="top_logo"></div>
+                <div class="top_Language" title="English" onmousedown="button_Top_Language_down()" onmousemove="button_Top_Language_move()" onmouseout="button_Top_Language_out()" onmouseup="button_Top_Language_up()"><label class="None_Select">ENG</label></div>
+                <div id="top_preview" class="top_preview" title="预览" onmousedown="button_Top_Preview_down()" onmousemove="button_Top_Preview_move()" onmouseout="button_Top_Preview_out()" onmouseup="button_Top_Preview_up()"></div>
+                <div id="top_back" class="top_back" title="退出" onmousedown="button_Top_Back_down()" onmousemove="button_Top_Back_move()" onmouseout="button_Top_Back_out()" onmouseup="button_Top_Back_up()"></div>
+                <div id="top_upload" class="top_upload" title="保存" onmousedown="button_Top_Upload_down()" onmousemove="button_Top_Upload_move()" onmouseout="button_Top_Upload_out()" onmouseup="button_Top_Upload_up()"></div>
+                <div id="top_help" class="top_help" title="帮助" onmousedown="button_Top_Help_down()" onmousemove="button_Top_Help_move()" onmouseout="button_Top_Help_out()" onmouseup="button_Top_Help_up()"></div>
+            </div>
+            <div class="center">
+                <div id="preview"></div>
+                <div id="back_preview"></div>
+                <div id="Language_preview"></div>
+                <div id="Remind"></div>
+                <div id="Form_Submit"></div>
+                <div id="Form_Upload"></div>
+                <div class="center_left">
+                    <div class="add_Top"></div>
+                    <div class="add_Add">
+                        <div class="add_Heading">
+                            <div class="add_Heading_FormInfo"><label>项目信息:</label></div>
+                            <div class="add_Heading_KeyInfo_Text"><label>项目编号:</label></div>
+                            <div class="add_Heading_KeyInfo_Value"><label id="add_Heading_KeyInfo_Value"></label></div>
+                            <div class="add_Heading_Password_Text"><label>项目密钥:</label></div>
+                            <div class="add_Heading_Password_Value"><label id="add_Heading_Password_Value"></label></div>
+                            <div class="add_Heading_Button"><input value="获取" type="button" onmousedown="button_add_Heading_Button_down()" onmousemove="button_add_Heading_Button_move()" onmouseout="button_add_Heading_Button_out()" onmouseup="button_add_Heading_Button_up()" /></div>
+                        </div>
+                        <div class="add_ProjectTitle"><label>项目类型:</label></div>
+                        <div class="add_Projects">
+                            <div class="add_Project"><label>单项选择</label><input class="add_Project_Single" type="button" value="添加" onmousedown="button_SingleAdd_down()" onmousemove="button_SingleAdd_move()" onmouseout="button_SingleAdd_out()" onmouseup="button_SingleAdd_up()" /></div>
+                            <div class="add_Project"><label>多项选择</label><input class="add_Project_Multiple" type="button" value="添加" onmousedown="button_MultipleAdd_down()" onmousemove="button_MultipleAdd_move()" onmouseout="button_MultipleAdd_out()" onmouseup="button_MultipleAdd_up()" /></div>
+                            <div class="add_Project"><label>文本文字</label><input class="add_Project_Text" type="button" value="添加" onmousedown="button_TextAdd_down()" onmousemove="button_TextAdd_move()" onmouseout="button_TextAdd_out()" onmouseup="button_TextAdd_up()" /></div>
+                        </div>
+                        <div class="add_Mess"><div class="add_Mess_Text"><label>更多类型待更新...</label></div></div>
+                    </div>
+                    <div class="add_Buttom"><div></div><label id="add_Buttom_Mess"></label></div>
+                </div>
+                <div class="center_center">
+                    <div id="form" class="form"></div>
+                </div>
+                <div class="center_right">
+                    <div class="edit_Top"></div>
+                    <div id="edit_Edit" class="edit_Edit">
+                        <div class="edit_NoEdit"><div class="edit_NoEdit_Text"><label>点击项目<br>可以编辑属性</label></div></div>
+                    </div>
+                    <div class="edit_Buttom"><div></div><input type="button" value="保存" onmousedown="button_ButtonSave_down()" onmousemove="button_ButtonSave_move()" onmouseout="button_ButtonSave_out()" onmouseup="button_ButtonSave_up()" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=../lib/jquery-3.3.1.min.js></script>
+    <script src=../lib/nebPay.js></script>
+    <script src=../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+    <script src=../lib/nebulas.js></script>
+    <script id="dapp_address" src="../lib/dapp_lib/dapp_address.js"></script>
+    <script id="dapp_edit" src="../lib/dapp_lib/dapp_edit.js"></script>
+    <script id="dapp_edit_data" src="../lib/dapp_lib/dapp_edit_data.js"></script>
+    <script id="dapp_presentation" src="../lib/dapp_lib/dapp_presentation.js"></script>
+    <script>
+
+        window.onload = function () {
+            OnLoad();
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+

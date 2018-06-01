@@ -1,0 +1,1760 @@
+﻿
+.html {
+    height: 100%;
+
+}
+.body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.global {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background: url(../img/edit/edit_main.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events:none;
+}
+.top {
+    position: relative;
+    width: 100%;
+    height: 7%;    
+    background-color:rgba(0, 0, 0, 0.75);
+}
+.top_logo {
+    position: absolute;
+    top: 27.5%;
+    left: 5%;
+    width: 7.5%;
+    height: 45%;
+    background: url(../img/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+.top_back {
+    position: absolute;
+    top: 25%;
+    left: 96.5%;
+    width: 2%;
+    height: 50%;
+    background: url(../img/edit/edit_top_back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity:0.85;
+}
+.back_preview {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.back_preview_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.back_preview_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.back_preview_pane_mess {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .back_preview_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 80%;
+    }
+.back_preview_pane_BackYes {
+    position: absolute;
+    top: 60%;
+    left: 17.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .back_preview_pane_BackYes input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.back_preview_pane_BackNo {
+    position: absolute;
+    top: 60%;
+    left: 57.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .back_preview_pane_BackNo input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.None_Select {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Form_Submit {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Form_Submit_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 275px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Form_Submit_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Form_Submit_pane_mess {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .Form_Submit_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 80%;
+    }
+.Form_Submit_pane_BackYes {
+    position: absolute;
+    top: 62.5%;
+    left: 17.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Form_Submit_pane_BackYes input {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    border-style: solid;
+    border-color: #009aff;
+    border-width: 0px;
+    border-radius: 2px;
+    background-color: rgba(255, 106, 0, 0.8);
+    outline: none;
+    color: #ffffff;
+    font-size: 80%;
+}
+.Form_Submit_pane_BackNo {
+    position: absolute;
+    top: 62.5%;
+    left: 57.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Form_Submit_pane_BackNo input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Form_Submit_pane_Back {
+    position: absolute;
+    top: 67.5%;
+    left: 37.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Form_Submit_pane_Back input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.Form_Upload {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Form_Upload_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 275px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Form_Upload_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Form_Upload_pane_mess {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .Form_Upload_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 80%;
+    }
+.Form_Upload_pane_BackYes {
+    position: absolute;
+    top: 60%;
+    left: 17.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Form_Upload_pane_BackYes input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Form_Upload_pane_BackNo {
+    position: absolute;
+    top: 60%;
+    left: 57.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Form_Upload_pane_BackNo input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Form_Upload_pane_Back {
+    position: absolute;
+    top: 67.5%;
+    left: 37.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Form_Upload_pane_Back input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+
+.top_preview {
+    position: absolute;
+    top: 27.5%;
+    left: 93.5%;
+    width: 1.75%;
+    height: 45%;
+    background: url(../img/edit/edit_top_preview.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+.top_preview_true {
+    position: absolute;
+    top: 27.5%;
+    left: 93.5%;
+    width: 1.75%;
+    height: 45%;
+    background: url(../img/edit/edit_top_preview.png);
+    background-color:rgba(255, 255, 255, 0.15);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.top_upload {
+    position: absolute;
+    top: 27.5%;
+    left: 90.25%;
+    width: 1.75%;
+    height: 50%;
+    background: url(../img/edit/edit_top_upload.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.top_Language {
+    position: absolute;
+    top: 27.5%;
+    left: 86.85%;
+    width: 1.7%;
+    height: 47.5%;
+    background: url(../img/language.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+}
+    .top_Language label {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        width: 1%;
+        height: 20%;
+        font-size: 50%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+.Language_preview {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Language_preview_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Language_preview_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Language_preview_pane_mess {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .Language_preview_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 80%;
+    }
+.Language_preview_pane_BackYes {
+    position: absolute;
+    top: 60%;
+    left: 17.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Language_preview_pane_BackYes input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Language_preview_pane_BackNo {
+    position: absolute;
+    top: 60%;
+    left: 57.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Language_preview_pane_BackNo input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.top_help {
+    position: absolute;
+    top: 30.5%;
+    left: 84.25%;
+    width: 1.5%;
+    height: 40%;
+    background: url(../img/edit/edit_top_help.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+}
+
+.Remind {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Remind_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Remind_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Remind_pane_mess {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .Remind_pane_mess label {
+    color: rgba(255, 106, 0, 0.8);
+    font-size: 100%;
+}
+.Remind_pane_Button {
+    position: absolute;
+    top: 70%;
+    left: 37.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Remind_pane_Button input {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    border-style: solid;
+    border-color: #009aff;
+    border-width: 0px;
+    border-radius: 2px;
+    background-color: rgba(255, 106, 0, 0.8);
+    outline: none;
+    color: #ffffff;
+    font-size: 80%;
+}
+
+.center {
+    position: relative;
+    width: 100%;
+    height: 93%;
+}
+.center_left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+.center_right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 250px;
+    height: 100%;
+    float: right;
+}
+.center_center {
+    position: absolute;
+    top: 0%;
+    left: 250px;
+    width: calc(100% - 500px);
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.edit_Top {
+    position: relative;
+    width: 100%;
+    height: 7.5%;
+    background-color: rgba(255,255,255,0.5);
+}
+.edit_Edit {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(238,238,238,0.5);
+}
+.edit_Buttom {
+    position: relative;
+    width: 100%;
+    height: 7.5%;
+}
+    .edit_Buttom input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 40%;
+        height: 45%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        background-color: #009aff;
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+    .edit_Buttom div {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        opacity: 0.5;
+    }
+.edit_NoEdit {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    border-style: dashed;
+    border-color: #ffffff;
+    border-width: 0px;
+    position: relative;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.edit_NoEdit_Text {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+}
+    .edit_NoEdit_Text label {
+        color: #eeeeee;
+        font-size: 80%;
+    }
+.edit_Edit_Heading {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 5%;
+    position: relative;
+}
+.edit_Edit_Heading_Type {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+}
+    .edit_Edit_Heading_Type label {
+        color: #009aff;
+        font-size: 75%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.edit_Edit_Title {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+    .edit_Edit_Title label {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 20%;
+        height: 60%;
+        text-align: center;
+        font-size: 80%;
+        color: #009aff;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .edit_Edit_Title textarea {
+        position: absolute;
+        top: 5%;
+        left: 25%;
+        width: 60%;
+        height: 80%;
+        font-size: 90%;
+        resize: none;
+        outline-color: #009aff;
+    }
+.edit_Edit_Multiple {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+    position: relative;
+}
+.edit_Edit_Multiple_Options {
+    position: absolute;
+    width: 100%;
+}
+.edit_Edit_Multiple_Option {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+    .edit_Edit_Multiple_Option label {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 20%;
+        height: 60%;
+        text-align: center;
+        font-size: 80%;
+        color: #009aff;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .edit_Edit_Multiple_Option input {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        width: 60%;
+        height: 60%;
+        font-size: 70%;
+        outline-color: #009aff;
+    }
+.edit_Edit_Multiple_OptionButton {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.edit_Edit_Multiple_OptionButton_Add {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 20%;
+    height: 35%;
+    border-style: solid;
+    border-color: #009aff;
+    border-width: 0px;
+    background-color: #009aff;
+    outline: none;
+    color: #ffffff;
+    font-size: 80%;
+    opacity: 1;
+}
+.edit_Edit_Multiple_OptionButton_Del {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 20%;
+    height: 35%;
+    border-style: solid;
+    border-color: #009aff;
+    border-width: 0px;
+    background-color: #009aff;
+    outline: none;
+    color: #ffffff;
+    font-size: 90%;
+    opacity: 1;
+}
+.edit_Edit_Multiple_OptionNum {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+    .edit_Edit_Multiple_OptionNum label {
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        width: 30%;
+        height: 60%;
+        text-align: center;
+        font-size: 80%;
+        color: #009aff;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.edit_Edit_Multiple_Num_Min {
+    position:relative;
+    width:100%;
+    height:40px;
+}
+    .edit_Edit_Multiple_Num_Min label{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 30%;
+    height: 60%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+    .edit_Edit_Multiple_Num_Min input {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 20%;
+        height: 50%;
+        text-align:center;
+        font-size: 80%;
+        color: #009aff;
+        background-color:rgba(238,238,238,0.05);
+        border-width:0px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        pointer-events:none;
+    }
+    .edit_Edit_Multiple_Num_Min_div {
+        position: absolute;
+        top: 25.85%;
+        left: 55%;
+        width: 5%;
+        height: 53%;
+        text-align: center;
+        font-size: 80%;
+        color: #009aff;
+        background-color: rgba(238,238,238,0.05);
+        border-width: 0px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        pointer-events: none;
+    }
+.edit_Edit_Multiple_Num_Min_add {
+    position: absolute;
+    top: 25.85%;
+    left: 55%;
+    width: 5%;
+    height: 25%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    background: url(../img/edit/edit_edit_mu_add.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.edit_Edit_Multiple_Num_Min_del {
+    position: absolute;
+    top: 53.85%;
+    left: 55%;
+    width: 5%;
+    height: 25%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    background: url(../img/edit/edit_edit_mu_del.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.edit_Edit_Multiple_Num_Max {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+    .edit_Edit_Multiple_Num_Max label {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 30%;
+    height: 60%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+    .edit_Edit_Multiple_Num_Max input {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    background-color: rgba(238,238,238,0.05);
+    border-width: 0px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit_Edit_Multiple_Num_Max_div {
+    position: absolute;
+    top: 25.85%;
+    left: 55%;
+    width: 5%;
+    height: 53%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    background-color: rgba(238,238,238,0.05);
+    border-width: 0px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit_Edit_Multiple_Num_Max_add {
+    position: absolute;
+    top: 25.85%;
+    left: 55%;
+    width: 5%;
+    height: 25%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    background: url(../img/edit/edit_edit_mu_add.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.edit_Edit_Multiple_Num_Max_del {
+    position: absolute;
+    top: 53.85%;
+    left: 55%;
+    width: 5%;
+    height: 25%;
+    text-align: center;
+    font-size: 80%;
+    color: #009aff;
+    background: url(../img/edit/edit_edit_mu_del.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.edit_Edit_Single {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+    position: relative;
+}
+.edit_Edit_Single_Options {
+    position: absolute;
+    width: 100%;
+}
+.edit_Edit_Single_Option {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+    .edit_Edit_Single_Option label {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 20%;
+        height: 60%;
+        text-align: center;
+        font-size: 80%;
+        color: #009aff;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .edit_Edit_Single_Option input {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        width: 60%;
+        height: 60%;
+        font-size: 70%;
+        outline-color: #009aff;
+    }
+.edit_Edit_Single_OptionButton {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.edit_Edit_Single_OptionButton_Add {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 20%;
+    height: 35%;
+    border-style: solid;
+    border-color: #009aff;
+    border-width: 0px;
+    background-color: #009aff;
+    outline: none;
+    color: #ffffff;
+    font-size: 80%;
+    opacity: 1;
+}
+.edit_Edit_Single_OptionButton_Del {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 20%;
+    height: 35%;
+    border-style: solid;
+    border-color: #009aff;
+    border-width: 0px;
+    background-color: #009aff;
+    outline: none;
+    color: #ffffff;
+    font-size: 90%;
+    opacity: 1;
+}
+.edit_Edit_Text {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+    .edit_Edit_Text label {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        width: 20%;
+        height: 60%;
+        text-align: center;
+        font-size: 80%;
+        color: #009aff;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .edit_Edit_Text textarea {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        width: 60%;
+        height: 60%;
+        font-size: 80%;
+        outline-color: #009aff;
+        resize: none;
+    }
+
+.add_Top {
+    position: relative;
+    width: 100%;
+    height: 7.5%;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+.add_Add {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(238,238,238,0.5)
+}
+.add_Buttom {
+    position: relative;
+    width: 100%;
+    height: 7.5%;
+}
+    .add_Buttom label {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 40%;
+        transform: translate(-50%,-50%);
+        border-style: dashed;
+        border-color: #ffffff;
+        border-width: 0px;
+        outline: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 80%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .add_Buttom div {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        opacity: 0.5;
+    }
+.add_Heading {
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+.add_Heading_FormInfo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+}
+    .add_Heading_FormInfo label {
+        color: #009aff;
+        font-size: 75%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.add_Heading_KeyInfo_Text {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 23%;
+    height: 40%;
+}
+    .add_Heading_KeyInfo_Text label {
+        color: #009aff;
+        font-size: 75%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.add_Heading_KeyInfo_Value {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    width: 42%;
+    height: 40%;
+}
+    .add_Heading_KeyInfo_Value label {
+        color: #808080;
+        font-size: 75%;
+    }
+.add_Heading_Password_Text {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 23%;
+    height: 40%;
+}
+    .add_Heading_Password_Text label {
+        color: #009aff;
+        font-size: 75%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.add_Heading_Password_Value {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    width: 42%;
+    height: 40%;
+}
+    .add_Heading_Password_Value label {
+        color: #808080;
+        font-size: 75%;
+    }
+.add_Heading_Button {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    width: 100%;
+    height: 25%;
+}
+    .add_Heading_Button input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 35%;
+        height: 50%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        background-color: #009aff;
+        outline: none;
+        color: #ffffff;
+        font-size: 75%;
+    }
+.add_ProjectTitle {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+    .add_ProjectTitle label {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 40%;
+        height: 40%;
+        color: #009aff;
+        font-size: 75%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.add_Projects {
+    width: 100%;
+}
+.add_Project {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+    .add_Project label {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 40%;
+        height: 50%;
+        color: #808080;
+        font-size: 80%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+.add_Project_Multiple {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 15%;
+    height: 50%;
+    color: #009aff;
+    outline: none;
+    background-color: rgba(0, 154, 255, 0);
+    border-color: #009aff;
+    border-style: solid;
+    border-width: 0px;
+    font-size: 75%;
+}
+.add_Project_Single {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 15%;
+    height: 50%;
+    color: #009aff;
+    outline: none;
+    background-color: rgba(0, 154, 255, 0);
+    border-color: #009aff;
+    border-style: solid;
+    border-width: 0px;
+    font-size: 75%;
+}
+.add_Project_Text {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 15%;
+    height: 50%;
+    color: #009aff;
+    outline: none;
+    background-color: rgba(0, 154, 255, 0);
+    border-color: #009aff;
+    border-style: solid;
+    border-width: 0px;
+    font-size: 75%;
+}
+
+.add_Mess {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+.add_Mess_Text {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    width: 60%;
+    height: 10%;
+    text-align: center;
+}
+    .add_Mess_Text label {
+        color: rgba(238,238,238,0.75);
+        font-size: 80%;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+.form {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    right: 50%;
+    width: 500px;
+    transform: translate(-50%,0%);
+}
+.form_Heading {
+    width: 100%;
+    height: 35px;
+    background-color: #ff911a;
+}
+.form_MainTitle {
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+.form_MainTitle_title {
+    position: absolute;
+    top: 12px;
+    left: 5%;
+    width: 90%;
+    height: 36px;
+    text-align: center;
+}
+    .form_MainTitle_title label {
+        color: #000000;
+        font-size: 90%;
+    }
+.form_MainTitle_content {
+    position: absolute;
+    top: 48px;
+    left: 5%;
+    width: 90%;
+    height: 72px;
+}
+    .form_MainTitle_content label {
+        white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        -ms-word-wrap: break-word;
+        color: #000000;
+        font-size: 67.5%;
+    }
+
+.form_Project_List {
+    width: 100%;
+    background-color: #ffffff;
+}
+.form_Project {
+    width: 100%;
+}
+.form_Project_OnClick {
+    width: 100%;
+    background-color: rgba(238,238,238,0.25);
+}
+.form_Project__Head {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.form_Project__Head_Type {
+    position: absolute;
+    top: 20%;
+    left: 1.5%;
+    width: 35%;
+    height: 30%;
+    color: #ff911a;
+    font-size: 80%;
+    font-weight: 800;
+}
+.form_Project__Head_Del {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    text-align: center;
+    width: 7%;
+    height: 70%;
+    background: url(../img/edit/edit_project_del.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+}
+
+.form_Project_Multiple {
+    width: 100%;
+}
+.form_Project_Multiple_title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+    .form_Project_Multiple_title label {
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 91%;
+        height: 100%;
+        word-wrap: break-word;
+        color: #000000;
+        font-size: 80%;
+    }
+.form_Project_Multiple_option {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+    .form_Project_Multiple_option input {
+        position: absolute;
+        top: 1.5px;
+        left: 7%;
+        width: 5%;
+        height: 12px;
+        color: #000000;
+    }
+    .form_Project_Multiple_option label {
+        position: absolute;
+        top: 1.5px;
+        left: 13%;
+        width: 75%;
+        height: 12px;
+        color: #ff911a;
+        font-size: 80%;
+    }
+
+.form_Project_Single {
+    width: 100%;
+}
+.form_Project_Single_title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+    .form_Project_Single_title label {
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 91%;
+        height: 100%;
+        word-wrap: break-word;
+        color: #000000;
+        font-size: 80%;
+    }
+.form_Project_Single_option {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+    .form_Project_Single_option input {
+        position: absolute;
+        top: 1.5px;
+        left: 7%;
+        width: 5%;
+        height: 12px;
+        color: #000000;
+    }
+    .form_Project_Single_option label {
+        position: absolute;
+        top: 1.5px;
+        left: 13%;
+        width: 75%;
+        height: 12px;
+        color: #ff911a;
+        font-size: 80%;
+    }
+
+.form_Project_Text {
+    width: 100%;
+}
+.form_Project_Text_title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+    .form_Project_Text_title label {
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 91%;
+        height: 100%;
+        word-wrap: break-word;
+        color: #000000;
+        font-size: 80%;
+    }
+.form_Project_Text_text {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+    .form_Project_Text_text label {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 10%;
+        height: 30%;
+        color: #ff911a;
+        font-size: 80%;
+    }
+    .form_Project_Text_text textarea {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 80%;
+        height: 80%;
+        color: #000000;
+        font-size: 65%;
+        resize: none;
+        pointer-events: none;
+        border-style: solid;
+        border-color: #ff911a;
+        border-width: 0.5px;
+        outline-color: #ff911a;
+        outline-width: 0.1px;
+    }
+
+.form_button_submit {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+}
+    .form_button_submit input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 20%;
+        height: 25%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #ff911a;
+        border-width: 0px;
+        background-color: #ff911a;
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.form_bottom {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+
+
+.form_EditMainTitle {
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+.form_EditMainTitle_tile {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+}
+    .form_EditMainTitle_tile label {
+        position: absolute;
+        top: 5%;
+        left: 0%;
+        width: 10%;
+        height: 30%;
+        color: #ff911a;
+        font-size: 80%;
+        text-align: center;
+    }
+    .form_EditMainTitle_tile input {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 80.75%;
+        height: 50%;
+        color: #000000;
+        font-size: 65%;
+        border-style: solid;
+        border-color: #ff911a;
+        border-width: 0.5px;
+        outline-color: #ff911a;
+        outline-width: 0.1px;
+    }
+.form_EditMainTitle_content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    position: relative;
+}
+    .form_EditMainTitle_content label {
+        position: absolute;
+        top: 5%;
+        left: 0%;
+        width: 10%;
+        height: 30%;
+        color: #ff911a;
+        font-size: 80%;
+        text-align: center;
+    }
+    .form_EditMainTitle_content textarea {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 80%;
+        height: 90%;
+        color: #000000;
+        font-size: 75%;
+        resize: none;
+        border-style: solid;
+        border-color: #ff911a;
+        border-width: 0.5px;
+        outline-color: #ff911a;
+        outline-width: 0.1px;
+    }
