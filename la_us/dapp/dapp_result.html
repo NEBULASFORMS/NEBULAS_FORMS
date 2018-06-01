@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title id="title">星云数据表 NebluasForms</title>
+</head>
+<style type="text/css">
+    @import url(../css/dapp_result.css);
+</style>
+<html class="Result_html">
+<body class="Result_body">
+    <div class="Result_global">
+        <div class="Result_main">
+            <div class="Result_top">
+                <div class="Result_top_logo"></div>
+                <div class="Result_top_Language" title="中文" onmousedown="button_Result_Top_Language_down()" onmousemove="button_Result_Top_Language_move()" onmouseout="button_Result_Top_Language_out()" onmouseup="button_Result_Top_Language_up()"><label class="Result_None_Select">中</label></div>
+                <div class="Result_top_house" title="House" onmousedown="button_Result_Top_House_down()" onmousemove="button_Result_Top_House_move()" onmouseout="button_Result_Top_House_out()" onmouseup="button_Result_Top_House_up()"></div>
+                <div class="Result_top_help" title="Help" onmousedown="button_Result_Top_Help_down()" onmousemove="button_Result_Top_Help_move()" onmouseout="button_Result_Top_Help_out()" onmouseup="button_Result_Top_Help_up()"></div>
+            </div>
+            <div class="Result_center">
+                <div id="Result_Remind"></div>
+                <div id="Result_House"></div>
+                <div id="Result_Form_Submit"></div>
+                <div class="Result_center_center">
+                    <div id="Result_form" class="Result_form"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=../lib/jquery-3.3.1.min.js></script>
+    <script src=../lib/nebPay.js></script>
+    <script src=../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+    <script src=../lib/nebulas.js></script>
+    <script id="dapp_address" src="../lib/dapp_lib/dapp_address.js"></script>
+    <script id="dapp_presentation" src="../lib/dapp_lib/dapp_result.js"></script>
+    <script id="dapp_presentation" src="../lib/dapp_lib/dapp_result_data.js"></script>
+    <script>
+        window.onload = function () {
+            Result_OnLoad();
+        }
+    </script>
+
+</body>
+</html>

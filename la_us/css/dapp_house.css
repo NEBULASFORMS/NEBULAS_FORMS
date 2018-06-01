@@ -1,0 +1,697 @@
+﻿.House_html {
+    height: 100%;
+}
+.House_body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.House_global {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.House_main {
+    width: 100%;
+    height: 100%;
+    background: url(../img/house/house_main.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events:none;
+}
+.House_top {
+    position: relative;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.House_top_Language {
+    position: absolute;
+    top: 23.5%;
+    left: 93.5%;
+    width: 1.75%;
+    height: 50%;
+    background: url(../img/language.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+}
+
+    .House_top_Language label {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        width: 1%;
+        height: 20%;
+        font-size: 50%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+.House_top_logo {
+    position: absolute;
+    top: 27.5%;
+    left: 5%;
+    width: 7.5%;
+    height: 45%;
+    background: url(../img/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.House_top_help {
+    position: absolute;
+    top: 29.5%;
+    left: 91%;
+    width: 1.5%;
+    height: 40%;
+    background: url(../img/house/house_top_help.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+.House_top_house {
+    position: absolute;
+    top: 25%;
+    left: 96.5%;
+    width: 1.75%;
+    height: 45%;
+    background: url(../img/house/house_top_house.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.House_center {
+    position: relative;
+    width: 100%;
+    height: 93%;
+}
+
+.House_center_center {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.House_center_Notice {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+.House_Notice_top {
+    position: relative;
+    width: 100%;
+    height: 7.5%;
+    background-color: rgba(255,255,255,0.5);
+}
+.House_Notice_notice {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(238,238,238,0.5);
+}
+.House_Notice_buttom {
+    position: relative;
+    width: 100%;
+    height: 7.5%;
+    background-color: rgba(255,255,255,0.5);
+}
+    .House_Notice_buttom input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 40%;
+        height: 45%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius:2px;
+        background-color:rgba(0, 154, 255, 1);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.House_Notice_notice_title{
+    position:absolute;
+    top:10px;
+    left:5%;
+    width:90%;
+    height:20px;
+    font-size:95%;
+    color:rgba(0, 148, 255, 0.75);
+}
+.House_Notice_notice_text {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 80%;
+    height: 20px;
+    font-size: 85%;
+    color:rgba(238,238,238,0.85);
+    word-break:break-word;
+}
+.House_None_Select {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Text_Color_Blue{
+    color:rgba(0, 148, 255, 0.45);
+}
+
+
+.House_center_Main {
+    position: absolute;
+    top: 0%;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 100%;
+    float: left;
+    position:relative;
+}
+.House_Features {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 575px;
+    height: 450px;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+    background-color: rgba(255,255,255,0.85);
+    position:relative;
+}
+.House_Features_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.House_Features_Create {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(238,238,238,0.1);
+    border-radius: 5%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+}
+    .House_Features_Create label {
+        position: absolute;
+        top: 35%;
+        left: 37.5%;
+        width: 62.5%;
+        height: 40%;
+        font-size: 75%;
+        color:rgba(255, 106, 0, 0.8);
+    }
+    .House_Features_Create div {
+        position:absolute;
+        top:20%;
+        left:10%;
+        width:22.5%;
+        height:60%;
+        background: url(../img/house/house_features_create.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity:0.75;
+    }
+.House_Features_Restore {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(238,238,238,0.1);
+    border-radius: 5%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+}
+    .House_Features_Restore label {
+        position: absolute;
+        top: 37.5%;
+        left: 37.5%;
+        width: 62.5%;
+        height: 40%;
+        font-size: 75%;
+        color: rgba(255, 106, 0, 0.8);
+    }
+    .House_Features_Restore div {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 22.5%;
+        height: 62.5%;
+        background: url(../img/house/house_features_download.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.75;
+    }
+.House_Features_Search {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(238,238,238,0.1);
+    border-radius: 5%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+}
+    .House_Features_Search label {
+        position: absolute;
+        top: 37.5%;
+        left: 40%;
+        width: 62.50%;
+        height: 40%;
+        font-size: 75%;
+        color: rgba(255, 106, 0, 0.8);
+    }
+    .House_Features_Search div {
+        position: absolute;
+        top: 20%;
+        left: 9.5%;
+        width: 22.5%;
+        height: 55%;
+        background: url(../img/house/house_features_search.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.75;
+    }
+.House_Features_Result {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(238,238,238,0.1);
+    border-radius: 5%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+}
+    .House_Features_Result label {
+        position: absolute;
+        top: 37.5%;
+        left: 40%;
+        width: 62.5%;
+        height: 40%;
+        font-size: 75%;
+        color: rgba(255, 106, 0, 0.8);
+    }
+    .House_Features_Result div {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 22.5%;
+        height: 60%;
+        background: url(../img/house/house_features_result.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.75;
+    }
+
+.House_center_Preview {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 999;
+}
+.House_center_Preview_Background {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.House_Preview_Restore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 375px;
+    border-radius:5%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.House_Preview_Restore_Head {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align:center;
+}
+    .House_Preview_Restore_Head label {
+        color: rgba(0, 148, 255, 0.75);
+        font-size: 90%;
+    }
+.House_Preview_Restore_Key {
+        position: absolute;
+        top: 22.5%;
+        left: 10%;
+        width: 80%;
+        height: 15%;
+        position: relative;
+    }
+    .House_Preview_Restore_Key label{
+    position:absolute;
+    top:15%;
+    left:15%;
+    width:20%;
+    height:80%;
+    font-size:80%;
+    color:#009aff;
+}
+    .House_Preview_Restore_Key input {
+        position:absolute;
+        top: 7.5%;
+        left: 40%;
+        width: 40%;
+        height: 40%;
+    }
+.House_Preview_Restore_Pass {
+    position: absolute;
+    top: 22.5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Restore_Pass label {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 20%;
+        height: 80%;
+        font-size: 80%;
+        color: #009aff;
+    }
+    .House_Preview_Restore_Pass input {
+        position: absolute;
+        top: 7.5%;
+        left: 40%;
+        width: 40%;
+        height: 40%;
+    }
+.House_Preview_Restore_Mess {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align:center;
+    position: relative;
+}
+    .House_Preview_Restore_Mess label {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        font-size: 75%;
+        color:rgba(255, 0, 0, 0.75);
+    }
+.House_Preview_Restore_Button {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Restore_Button input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 30%;
+        height: 45%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(0, 154, 255, 1);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.House_Preview_Search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 375px;
+    border-radius: 5%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.House_Preview_Search_Head {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .House_Preview_Search_Head label {
+        color: rgba(0, 148, 255, 0.75);
+        font-size: 90%;
+    }
+.House_Preview_Search_Key {
+    position: absolute;
+    top: 27.5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Search_Key label {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 20%;
+        height: 80%;
+        font-size: 80%;
+        color: #009aff;
+    }
+    .House_Preview_Search_Key input {
+        position: absolute;
+        top: 7.5%;
+        left: 40%;
+        width: 40%;
+        height: 40%;
+    }
+.House_Preview_Search_Mess {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+    position: relative;
+}
+    .House_Preview_Search_Mess label {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        font-size: 75%;
+        color: rgba(255, 0, 0, 0.75);
+    }
+.House_Preview_Search_Button {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Search_Button input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 30%;
+        height: 45%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(0, 154, 255, 1);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.House_Preview_Result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 375px;
+    border-radius: 5%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.House_Preview_Result_Head {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .House_Preview_Result_Head label {
+        color: rgba(0, 148, 255, 0.75);
+        font-size: 90%;
+    }
+.House_Preview_Result_Key {
+    position: absolute;
+    top: 22.5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Result_Key label {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 20%;
+        height: 80%;
+        font-size: 80%;
+        color: #009aff;
+    }
+    .House_Preview_Result_Key input {
+        position: absolute;
+        top: 7.5%;
+        left: 40%;
+        width: 40%;
+        height: 40%;
+    }
+.House_Preview_Result_Pass {
+    position: absolute;
+    top: 22.5%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Result_Pass label {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 20%;
+        height: 80%;
+        font-size: 80%;
+        color: #009aff;
+    }
+    .House_Preview_Result_Pass input {
+        position: absolute;
+        top: 7.5%;
+        left: 40%;
+        width: 40%;
+        height: 40%;
+    }
+.House_Preview_Result_Mess {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+    position: relative;
+}
+    .House_Preview_Result_Mess label {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        font-size: 75%;
+        color: rgba(255, 0, 0, 0.75);
+    }
+.House_Preview_Result_Button {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    position: relative;
+}
+    .House_Preview_Result_Button input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 30%;
+        height: 45%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(0, 154, 255, 1);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }

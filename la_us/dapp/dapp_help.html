@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title id="title">星云数据表 NebluasForms</title>
+</head>
+<style type="text/css">
+    @import url(../css/dapp_help.css);
+</style>
+<html class="Help_html">
+<body class="Help_body">
+    <div class="Help_global">
+        <div class="Help_main">
+            <div class="Help_top">
+                <div class="Help_top_logo"></div>
+                <div class="Help_top_Language" onmousedown="button_Help_Top_Language_down()" onmousemove="button_Help_Top_Language_move()" onmouseout="button_Help_Top_Language_out()" onmouseup="button_Help_Top_Language_up()"><label class="Help_None_Select">中</label></div>
+                <div class="Help_top_house" onmousedown="button_Help_Top_House_down()" onmousemove="button_Help_Top_House_move()" onmouseout="button_Help_Top_House_out()" onmouseup="button_Help_Top_House_up()"></div>
+            </div>           
+            <div class="Help_center">
+                <div id="Preview"></div>
+                <div class="Help_center_center">
+                    <div class="Help_center_Main">
+                        <div class="Help_Pane">
+                            <div class="Help_Pane_Head"></div>
+                            <div class="Help_Pane_Text">
+                                <div class="Text_Head"><label>Instructions for use</label></div>
+                                <div class="Text_Begin_Title"><label>
+                                        In the Dapp use process, all operations involving data storage need to call your wallet and generate transaction information to complete.
+                                        <br><br>For example, if you submit project information to the contract:The result of sharing out the form or saving the data that you have not edited, all these need to generate transaction information to achieve.
+                                        <br><br>On the PC side we will wake up your browser's Nebula wallet plugin. On the mobile side, we will call the official wallet app (NAS nano).And the data will not be saved until the transaction is completed.Only a small amount of GAS will be generated when using forms.Wait for a short period of time after prompting the data to upload, in order to find your data, please do not worry about the loss of your data<br><br>Tips:In the Edge browser, text may not be wrapped. Chromium's browser is recommended.
+                                        </label></div>
+                                <div class="Text_IconFeatures"><label>Functional area Icon Description:</label></div>
+                                <div class="Text_Instructions_House"><div></div><label>Location:Main page, form page, report area Top right corner of Functional area<br>Function:Can jump to main page.</label></div>
+                                <div class="Text_Instructions_Help"><div></div><label><br>Location: All pages<br>Function:Can open a new usage help page.</label></div>
+                                <div class="Text_Instructions_Upload"><div></div><label>Location: Edit area Top right corner of Functional area<br>Function: You can use the data upload function or save the project you have not edited yet.</label></div>
+                                <div class="Text_Instructions_Preview"><div></div><label>Location: Edit area Top right corner of Functional area<br>Function: You can use the item preview function to see the actual effect of the project generated form.</label></div>
+                                <div class="Text_Instructions_Back"><div></div><label>Location: Edit Area Top right corner of Functional area.<br>Function: You can delete the project being edited.</label></div>
+                                <div class="Text_Used"><label>Main page function description:</label></div>
+                                <div class="Text_Create"><div></div><label>Create Project:<br>Go to the project edit page and create a new project.You can add different kinds of child elements to enrich the content of the project.Each new project can get a unique project number and project key from the contract.</label></div>
+                                <div class="Text_Restore"><div></div><label>Recovery Project:<br>You can recovery previously uploaded projects that you have not edited. You need to provide the number and key of the previous project when restoring.</label></div>
+                                <div class="Text_Search"><div></div><label>Search Form:<br>You can search for all items that have been edited and submitted. You need to provide a unique number for this item when searching. When the search is successful, it will enter the form page. You can share your project number or the address of the generated form page with your friends to complete the information collection.</label></div>
+                                <div class="Text_Result"><div></div><label>View Report:<br>Here you can view all the information of the current project you have collected.At the project title, it shows how many people currently complete the project. At the same time, the relevant data is counted for you in each sub-element.Before entering the results page, make sure that the project number and key you provided are correct.</label></div>
+                                <div class="Text_Edit"><label>Edit page description:</label></div>
+                                <div class="Text_Examples"><div onclick="ImgOpen(1)"></div><label>Example -1 (Click on the picture to see a larger version)</label></div>
+                                <div class="Text_Left">
+                                    <label>
+                                        <span class="Text_Font_Width">Left functional area:</span><br><br><span class="Text_Color_Orange">Project Information:</span>Here will show you the unique number and key of your current project. If you do not have these, you can click the <span class="Text_Color_Bule">Get</span> Tag to get a piece of information. Each item can only be accessed once.<br><br>
+                                        <span class="Text_Color_Orange">Project Types:</span> I have provided you with three selectable sub-element types in the current version that you can use to build your project.
+                                    </label>
+                                </div>
+                                <div class="Text_Right">
+                                    <label>
+                                        <span class="Text_Font_Width">Right editing area:</span><br><br>This area will provide various tools for editing sub-elements. If you want to edit the contents of a sub-element, you only need to click on the position of the sub-element in the middle area, and the edit tool I provided for you will be added in the editing area.<br><br>
+                                        When you edit sub-elements, there will be a preview effect for your reference. At this time, the data will not be saved, so if you are not satisfied, it will not affect the original data. This is a revocation that I reserved for you operational opportunities.<br>
+                                        At the same time, if you are satisfied with the results of this edit, just click on the blue Save tab at the bottom of the edit area to <span class="Text_Color_Bule">Save </span>this edit information.
+                                    </label>
+                                </div>
+                                <div class="Text_Center"><label>
+    <span class="Text_Font_Width">Project Exhibition Area:<br><br> </span>In this area you can see the approximate layout of your project. In the initial project, there will be a basic sub-element that you can edit to refine the title and content description of your project.<br>
+    The sub-elements you added on the left side will all be displayed here. If you want to edit the sub-elements, you only need to click on the position of the sub-elements, the editing tool will be displayed on the right side, and the icons <img class="Text_FontImg_Del" /> will appear in the upper right corner of the sub-elements. Allows you to delete unwanted child elements.
+</label></div>
+                                <div class="Text_How"><label>How to create a project?</label></div>
+                                <div class="Text_Begin">
+                                    <label>
+                                        Click the create project option on the main page, you will enter a new project edit page.<br><br>
+                                        In the example, I added a checkboxs as described above, then click on the project display area and more of the option's location to edit its properties.In the editor area can edit the contents of this element, option content, and options number, and in the related column, you can set the limit for the number of multiple options.
+                                    </label>
+                                </div>
+                                <div class="Text_Examples_2"><div onclick="ImgOpen(2)"></div><label>Example -2 (Click on the picture to see a larger version)</label></div>
+                                <div class="Text_Begin_2"><label>After editing your project, you can click the orange submission tab at the bottom of the project area to<span class="Text_Color_Orange"> submit</span>  the project to the smart contract. Note that before submitting you need to obtain a project number information, which is you The item's "address" on the smart contract allows you to retrieve it at any time. If you need to quit after editing, but do not want to lose the edited content, you can upload your content by clicking on the upload icon at the top of the ribbon. Then use the number and key to recover.</label></div>
+                                <div class="Text_Examples_3"><div onclick="ImgOpen(3)"></div><label>Example-3 (Click on the picture to see a larger version)</label></div>
+                                <div class="Text_Begin_3"><label>Now that you have submitted the project, you can use the search function to search on the main page. Then a page is created. You can also share the link to this page for others to fill in. After that, you can use the item number and key to view the results you have collected.</label></div>
+                                <div class="Text_Examples_4"><div onclick="ImgOpen(4)"></div><label>Example -4 (Click on the picture to see a larger version)</label></div>
+                                <div class="Text_Examples_5"><div onclick="ImgOpen(5)"></div><label>Example -5 (Click on the picture to see a larger version)</label></div>
+                                <div class="Text_Begin_4"><label>The above is an overview of the use process, I hope you can provide some help for your use.<br><br>In future releases, I will add a page that will provide suggestions and feedback.This will allow me to know what problems you are having. Let's work together to make this Dapp easier to use.</label></div>
+                            </div>
+                            <div class="Help_Pane_Buttom"></div>
+                        </div>
+                    </div>
+                    <div id="Help_center_Preview">
+                    </div>
+                </div>
+                <div id="Help_center_Preview"></div>
+            </div>  
+        </div>
+    </div>
+
+
+    <script src=../lib/jquery-3.3.1.min.js></script>
+    <script src=../lib/nebPay.js></script>
+    <script src=../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+    <script src=../lib/nebulas.js></script>
+    <script>
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "../lib/dapp_lib/dapp_help.js";
+        document.getElementsByTagName('head')[0].appendChild(script);     
+    </script>
+
+</body>
+</html>

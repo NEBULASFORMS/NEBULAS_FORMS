@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title id="title">星云数据表 NebluasForms</title>
+</head>
+<style type="text/css">
+    @import url(../css/dapp_house.css);
+</style>
+<html class="House_html">
+<body class="House_body">
+    <div class="House_global">
+        <div class="House_main">
+            <div class="House_top">
+                <div class="House_top_logo"></div>
+                <div class="House_top_Language" title="中文" onmousedown="button_House_Top_Language_down()" onmousemove="button_House_Top_Language_move()" onmouseout="button_House_Top_Language_out()" onmouseup="button_House_Top_Language_up()"><label class="House_None_Select">中</label></div>
+                <div class="House_top_house" title="House" onmousedown="button_House_Top_House_down()" onmousemove="button_House_Top_House_move()" onmouseout="button_House_Top_House_out()" onmouseup="button_House_Top_House_up()"></div>
+                <div class="House_top_help" title="Help" onmousedown="button_House_Top_Help_down()" onmousemove="button_House_Top_Help_move()" onmouseout="button_House_Top_Help_out()" onmouseup="button_House_Top_Help_up()"></div>
+            </div>
+            <div class="House_center">
+                <div class="House_center_center">
+                    <div id="House_center_Notice" class="House_center_Notice">
+                        <div class="House_Notice_top"></div>
+                        <div id="House_Notice_notice" class="House_Notice_notice">
+                            <div id="House_Notice_notice_title" class="House_Notice_notice_title"><div class="House_None_Select">Remind:</div></div>
+                            <div id="House_Notice_notice_text" class="House_Notice_notice_text"><div class="House_None_Select">Using Dapp requires NebPay to request a transaction, but it does not require you to pay the amount. This process is to allow your data to be stored in our contract.<br><br><br><p class="Text_Color_Blue">Nebula Wallet Address</p>Plugin:</div>https://github.com/ChengOrangeJu/WebExtensionWallet<br><div class="House_None_Select">App:</div>https://nano.nebulas.io<div class="House_None_Select"><br><br><br>If you have questions in use, you can click the help icon in the upper right corner to get help.</div><div class="House_None_Select">Click the tab below to close the notification bar.</div></div>
+                        </div>
+                        <div class="House_Notice_buttom"><input value="Close" type="button" onmousedown="button_House_NoticeClose_down()" onmousemove="button_House_NoticeClose_move()" onmouseout="button_House_NoticeClose_out()" onmouseup="button_House_NoticeClose_up()" /></div>
+                    </div>
+                    <div class="House_center_Main">
+                        <div class="House_Features">
+                            <div class="House_Features_Head"></div>
+                            <div class="House_Features_Create" onmousedown="button_House_Features_Create_down()" onmousemove="button_House_Features_Create_move()" onmouseout="button_House_Features_Create_out()" onmouseup="button_House_Features_Create_up()"><label>Create Project</label><div></div></div>
+                            <div class="House_Features_Restore" onmousedown="button_House_Features_Restore_down()" onmousemove="button_House_Features_Restore_move()" onmouseout="button_House_Features_Restore_out()" onmouseup="button_House_Features_Restore_up()"><label>Recovery Project</label><div></div></div>
+                            <div class="House_Features_Search" onmousedown="button_House_Features_Search_down()" onmousemove="button_House_Features_Search_move()" onmouseout="button_House_Features_Search_out()" onmouseup="button_House_Features_Search_up()"><label>Search Form</label><div></div></div>
+                            <div class="House_Features_Result" onmousedown="button_House_Features_Result_down()" onmousemove="button_House_Features_Result_move()" onmouseout="button_House_Features_Result_out()" onmouseup="button_House_Features_Result_up()"><label>View Report</label><div></div></div>
+                        </div>
+                    </div>
+                    <div id="House_center_Preview">
+
+                    </div>
+                </div>
+                <div id="House_center_Preview"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=../lib/jquery-3.3.1.min.js></script>
+    <script src=../lib/nebPay.js></script>
+    <script src=../lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+    <script src=../lib/nebulas.js></script>
+    <script id="dapp_address" src="../lib/dapp_lib/dapp_address.js"></script>
+    <script>
+        var script_data = document.createElement("script");
+        script_data.type = "text/javascript";
+        script_data.src = "../lib/dapp_lib/dapp_house_data.js";
+        document.getElementsByTagName('head')[0].appendChild(script_data);
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "../lib/dapp_lib/dapp_house.js";
+        document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,754 @@
+﻿.Pre_html {
+    height: 100%;
+}
+.Pre_body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.Pre_global {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Pre_main {
+    width: 100%;
+    height: 100%;
+    background: url(../img/pre/pre_main.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events:none;
+}
+.Pre_top {
+    position: relative;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.Pre_top_logo {
+    position: absolute;
+    top: 27.5%;
+    left: 5%;
+    width: 7.5%;
+    height: 45%;
+    background: url(../img/logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.Pre_House {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Pre_House_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Pre_House_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Pre_House_pane_mess {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .Pre_House_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 80%;
+    }
+.Pre_House_pane_BackYes {
+    position: absolute;
+    top: 60%;
+    left: 17.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Pre_House_pane_BackYes input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Pre_House_pane_BackNo {
+    position: absolute;
+    top: 60%;
+    left: 57.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Pre_House_pane_BackNo input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.Pre_top_Language {
+    position: absolute;
+    top: 25%;
+    left: 93.5%;
+    width: 1.7%;
+    height: 47.5%;
+    background: url(../img/language.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+}
+    .Pre_top_Language label {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        width: 1%;
+        height: 20%;
+        font-size: 50%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+.Pre_top_help {
+    position: absolute;
+    top: 30%;
+    left: 90.9%;
+    width: 1.5%;
+    height: 40%;
+    background: url(../img/pre/pre_top_help.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.Pre_top_house {
+    position: absolute;
+    top: 27.5%;
+    left: 96.5%;
+    width: 1.75%;
+    height: 45%;
+    background: url(../img/pre/pre_top_house.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.Pre_Remind {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Pre_Remind_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Pre_Remind_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Pre_Remind_pane_mess {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+}
+    .Pre_Remind_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 100%;
+    }
+.Pre_Remind_pane_Button {
+    position: absolute;
+    top: 70%;
+    left: 37.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Pre_Remind_pane_Button input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.Pre_None_Select {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Pre_Form_Submit {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10000;
+}
+.Pre_Form_Submit_pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 275px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.975);
+    position: relative;
+}
+.Pre_Form_Submit_pane_Head {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 17.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 106, 0, 0.8);
+}
+.Pre_Form_Submit_pane_mess {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    text-align: center;
+    word-break:break-word;
+    word-wrap:break-word;
+}
+    .Pre_Form_Submit_pane_mess label {
+        color: rgba(255, 106, 0, 0.8);
+        font-size: 80%;
+    }
+.Pre_Form_Submit_pane_BackYes {
+    position: absolute;
+    top: 62.5%;
+    left: 17.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Pre_Form_Submit_pane_BackYes input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Pre_Form_Submit_pane_BackNo {
+    position: absolute;
+    top: 62.5%;
+    left: 57.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Pre_Form_Submit_pane_BackNo input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+.Pre_Form_Submit_pane_Back {
+    position: absolute;
+    top: 67.5%;
+    left: 37.5%;
+    width: 25%;
+    height: 22.5%;
+}
+    .Pre_Form_Submit_pane_Back input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #009aff;
+        border-width: 0px;
+        border-radius: 2px;
+        background-color: rgba(255, 106, 0, 0.8);
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.Pre_center {
+    position: relative;
+    width: 100%;
+    height: 93%;
+}
+
+.Pre_center_center {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.Pre_form {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    right: 50%;
+    width: 600px;
+    transform: translate(-50%,0%);
+}
+
+.Pre_form_Heading {
+    width: 100%;
+    height: 35px;
+    background-color: #ff911a;
+}
+
+.Pre_form_MainTitle {
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.Pre_form_MainTitle_title {
+    position: absolute;
+    top: 12px;
+    left: 5%;
+    width: 90%;
+    height: 36px;
+    text-align: center;
+}
+
+    .Pre_form_MainTitle_title label {
+        color: #000000;
+        font-size: 90%;
+    }
+
+.Pre_form_MainTitle_content {
+    position: absolute;
+    top: 48px;
+    left: 5%;
+    width: 90%;
+    height: 72px;
+}
+
+    .Pre_form_MainTitle_content label {
+        white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        -ms-word-wrap: break-word;
+        color: #000000;
+        font-size: 67.5%;
+    }
+
+.Pre_form_Project_List {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.Pre_form_Project {
+    width: 100%;
+}
+
+.Pre_form_Project__Head {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.Pre_form_Project__Head_Type {
+    position: absolute;
+    top: 20%;
+    left: 1.5%;
+    width: 35%;
+    height: 30%;
+    color: #ff911a;
+    font-size: 80%;
+    font-weight: 800;
+}
+
+.Pre_form_Project_Multiple {
+    width: 100%;
+}
+
+.Pre_form_Project_Multiple_title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+    .Pre_form_Project_Multiple_title label {
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 91%;
+        height: 100%;
+        word-wrap: break-word;
+        color: #000000;
+        font-size: 80%;
+    }
+
+.Pre_form_Project_Multiple_option {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+    .Pre_form_Project_Multiple_option label {
+        position: absolute;
+        top: 1.5px;
+        left: 13%;
+        width: 75%;
+        height: 12px;
+        color: #ff911a;
+        font-size: 80%;
+        word-wrap: break-word;
+    }
+
+.Pre_form_Project_Multiple_checkbox_pane {
+    position: absolute;
+    top: 2px;
+    left: 9%;
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+.Pre_form_Project_Multiple_checkbox {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(238,238,238,0.75);
+    position: relative;
+    border-style: solid;
+    border-color: rgba(238,238,238,1);
+    border-width: 0.5px;
+}
+
+.Pre_form_Project_Multiple_checkbox_Move {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(238,238,238,0.2);
+    position: relative;
+    border-style: solid;
+    border-color: rgba(238,238,238,0.5);
+    border-width: 0.5px;
+}
+
+.Pre_form_Project_Multiple_checkbox_Selected {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 145, 26, 1.0);
+}
+
+.Pre_form_Project_Multiple_checkbox_NoSelected {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 145, 26, 0.1);
+}
+
+.Pre_form_Project_Single {
+    width: 100%;
+}
+
+.Pre_form_Project_Single_title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+    .Pre_form_Project_Single_title label {
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 91%;
+        height: 100%;
+        word-wrap: break-word;
+        color: #000000;
+        font-size: 80%;
+    }
+
+.Pre_form_Project_Single_option {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+    .Pre_form_Project_Single_option label {
+        position: absolute;
+        top: 1.5px;
+        left: 13%;
+        width: 75%;
+        height: 12px;
+        color: #ff911a;
+        font-size: 80%;
+        word-wrap: break-word;
+    }
+
+.Pre_form_Project_Single_checkbox_pane {
+    position: absolute;
+    top: 2px;
+    left: 9%;
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+.Pre_form_Project_Single_checkbox {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(238,238,238,0.75);
+    position: relative;
+    border-style: solid;
+    border-color: rgba(238,238,238,1);
+    border-width: 0.5px;
+}
+
+.Pre_form_Project_Single_checkbox_Move {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(238,238,238,0.2);
+    position: relative;
+    border-style: solid;
+    border-color: rgba(238,238,238,0.5);
+    border-width: 0.5px;
+}
+
+.Pre_form_Project_Single_checkbox_Selected {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 145, 26, 1.0);
+}
+
+.Pre_form_Project_Single_checkbox_NoSelected {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 145, 26, 0.1);
+}
+
+
+
+.Pre_form_Project_Text {
+    width: 100%;
+}
+
+.Pre_form_Project_Text_title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+    .Pre_form_Project_Text_title label {
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        width: 91%;
+        height: 100%;
+        word-wrap: break-word;
+        color: #000000;
+        font-size: 80%;
+    }
+
+.Pre_form_Project_Text_text {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+    .Pre_form_Project_Text_text label {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 10%;
+        height: 30%;
+        color: #ff911a;
+        font-size: 80%;
+    }
+
+    .Pre_form_Project_Text_text textarea {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 80%;
+        height: 80%;
+        color: #000000;
+        font-size: 100%;
+        resize: none;
+        border-style: solid;
+        border-color: #ff911a;
+        border-width: 0.5px;
+        outline-color: #ff911a;
+        outline-width: 0.1px;
+    }
+
+.Pre_form_button_submit {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+    .Pre_form_button_submit input {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        width: 20%;
+        height: 25%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-color: #ff911a;
+        border-width: 0px;
+        background-color: #ff911a;
+        outline: none;
+        color: #ffffff;
+        font-size: 80%;
+    }
+
+.Pre_form_bottom {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
